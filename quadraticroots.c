@@ -19,22 +19,22 @@ int main()
         root1 = (-b + sqrt(discriminant)) / (2*a);
         root2 = (-b - sqrt(discriminant)) / (2*a);
         printf("Roots are real and distinct-\n");
-        printf("Root1 = %f\n", root1);
-        printf("Root2 = %f\n", root2);
+        printf("Root1 = %.2f\n", root1);
+        printf("Root2 = %.2f\n", root2);
     }
     else if (discriminant == 0) 
     {
         root1 = -b/(2*a);
         printf("Roots are real and equal-\n");
-        printf("Root = %f\n", root1);
+        printf("Root = %.2f\n", root1);
     }
     else 
     {
         realPart = -b / (2*a);
         imagPart = sqrt(-discriminant) / (2*a);
         printf("Roots are imaginary-\n");
-        printf("Root1 = %f + %fi\n", realPart, imagPart);
-        printf("Root2 = %f - %fi\n", realPart, imagPart);
+        printf("Root1 = %.2f + %.2fi\n", realPart, imagPart);
+        printf("Root2 = %.2f - %.2fi\n", realPart, imagPart);
     }
 
     return 0;
